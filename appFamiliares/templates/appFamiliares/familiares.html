@@ -1,0 +1,16 @@
+{% extends 'appFamiliares/base.html' %}
+
+{% load humanize%}
+
+{% block contenido %}
+
+<section id="familiares">
+    <h2>FAMILIARES</h2>
+    {% for f in familiar %}
+
+    <h2> {{f.nombre | title}} </h2>
+    {% endfor %}
+</section>
+
+
+{% endblock contenido %}
